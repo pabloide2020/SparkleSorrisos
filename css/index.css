@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    /* FONTS */
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Roboto", sans-serif;
+    --major-contrast-weight: 600;
+    --medium-contrast-weight: 500;
+    --minor-contrast-weight: 400;
+
+    /* COLORS */
+    --primary-clr: #06626F;
+    --main-clr: #72F2EB;
+    --main-black-clr: #0E0E0E;
+    --main-clr-var1: #38D0C8;
+    --secondary-gradient: linear-gradient(to bottom, var(--main-clr), #28BBB3);
+}
+
+/* ===== NAVBAR ====== */
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: var(--primary-clr);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav .logo img {
+    height: 1.5rem;
+    margin: .75rem 1rem;
+}
+
+.navbar-links {
+    display: none;
+}
+
+.navbar-links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+
+.navbar-links a {
+    color: white;
+    font-family: var(--primary-font);
+    text-decoration: none;
+    font-weight: var(--medium-contrast-weight);
+    display: block;
+}
+
+.navbar-links ul li{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: .5em;
+    display: block;
+}
+
+.navbar-links li:active {
+    background-color: var(--main-clr);
+}
+
+.navbar-links a img {
+    height: 0.6rem;
+    transform: translate(25%, 75%);
+    position: absolute;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.active {
+    display: flex;
+}
+
+/* ==== HEADER ==== */
+header {
+    min-height: 30rem;
+    font-family: var(--primary-font);
+    color: white;
+    background-color: var(--main-black-clr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url("/home/pabloide2020/Documentos/SparkleSorrisos/imgs/smile-home.jpg"); */
+}
+
+header h1 {
+    font-weight: var(--major-contrast-weight);
+    font-size: clamp(2.5rem, 5vw + 1rem, 5rem);
+    max-width: 10ch;
+    line-height: 1.1;
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 3.5rem;
+    min-height: clamp(6rem, 15vw + 2rem, 13rem);
+    position: relative;
+    padding-top: .30rem;
+    overflow-y: hidden;
+}
+
+header h1::before {
+    content: '';
+    width: 20%;
+    height: .30rem;
+    background-image: var(--secondary-gradient);
+    position: absolute;
+    top: 0;
+    border-radius: 4px;
+}
+
+.man-smile {
+    display: none;
+}
+
+.action-btn{
+    text-decoration: none;
+    color: var(--main-black-clr);
+    background-image: linear-gradient(to bottom, var(--main-clr), var(--main-clr-var1));
+    padding: .25rem .75rem;
+    border-radius: 5px;
+    font-family: var(--primary-font);
+    font-weight: var(--medium-contrast-weight);
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.action-btn:active {
+    filter: brightness(150%);
+}
+
+.action-btn img {
+    transform: translateY(25%);
+    height: 1.1rem;
+    margin-left: .5rem;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    color: var(--main-clr);
+}
