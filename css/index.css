@@ -323,3 +323,74 @@ p span {
   margin: 0 auto;
 }
 
+/*===== specialties =====*/
+
+.specialties {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.specialties h2 {
+  margin-bottom: 1rem;
+}
+
+.specialties img {
+  border-radius: 5px;
+}
+
+.specialties-cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.specialties-cards .card {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-clr);
+  width: min(45%, 21.25rem);
+  padding: .5em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.specialties-cards .card::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: calc(100% - 1em);
+  left: 50;
+  bottom: 22.5%;
+  background-image: var(--secondary-gradient);
+  border-radius: 5px;
+}
+
+.specialties .card h3 {
+  color: var(--terciary-clr);
+  font-family: var(--secondary-font);
+  font-weight: var(--medium-contrast-weight);
+  font-size: 1.5rem ;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.specialties .card a {
+  color: var(--primary-black-clr);
+  background-color: var(--primary-white-clr);
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--primary-font);
+}
+
+.specialties .card a:active {
+  background-color: var(--primary-clr);
+}
