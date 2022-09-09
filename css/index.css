@@ -192,7 +192,7 @@ header div {
   color: var(--primary-clr);
 }
 
-/* ===== Section DIFERENTIALS ===== */
+/* ===== Section DIFFERENTIALS ===== */
 
 .differentials {
   margin-top: min(20%, 7rem);
@@ -225,6 +225,7 @@ header div {
   font-family: var(--secondary-font);
   font-weight: var(--minor-contrast-weight);
   color: var(--terciary-black-clr);
+  line-height: 1.5;
 }
 
 p span {
@@ -277,3 +278,48 @@ p span {
 .middle {
     margin: 0 5vw;
 }
+
+/* ======== Section TESTIMONIALS ========== */
+
+.testimonials {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.dps img {
+  display: none;
+}
+
+.text-testimonials {
+  background-color: var(--primary-white-clr);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.text-testimonials p {
+  font-family: var(--secondary-font);
+  color: var(--terciary-black-clr);
+  line-height: 1.5;
+  margin-top: 1.25rem;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.name {
+  font-family: var(--primary-font);
+  font-weight: var(--medium-contrast-weight);
+  color: var(--secondary-clr);
+  margin-top: .25rem;
+}
+
+.testimonials h2 {
+  align-self: center;
+}
+
+.testimonials .action-btn {
+  width: min(90%, 20rem);
+  margin: 0 auto;
+}
+
