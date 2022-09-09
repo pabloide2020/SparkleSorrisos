@@ -394,3 +394,65 @@ p span {
 .specialties .card a:active {
   background-color: var(--primary-clr);
 }
+
+/* ======== Section ABOUT ======== */
+
+.about {
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: var(--primary-black-clr);
+  padding: 1rem;
+}
+
+.about-txt h2{
+  color: white;
+  font-family: var(--primary-font);
+}
+
+.about-txt p {
+  color: var(--terciary-white-clr);
+  font-family: var(--secondary-font);
+  line-height: 1.5;
+  margin-top: .75rem;
+  margin-bottom: 1.75rem;
+}
+
+.about-txt {
+  position: relative;
+}
+
+.about-txt p span {
+  color: var(--secondary-white-clr);
+}
+
+.icon-txt h3 {
+  color: white;
+  font-family: var(--primary-font);
+  font-weight: var(--major-contrast-weight);
+  margin-left: 1rem;
+}
+
+.icon-txt {
+  display: flex;
+  align-items: center;
+}
+
+.icon-txt img {
+ min-width: 38px;
+}
+
+.border-line {
+  height: 2px;
+  width: min(70%,320px);
+  background-color: var(--secondary-black-clr);
+  margin: 1rem 0;
+}
+
+.about .action-btn {
+  margin-top: 3rem;
+}
+
+.building {
+  display: none;
+}
