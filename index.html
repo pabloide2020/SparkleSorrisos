@@ -11,7 +11,7 @@
   <body>
     <nav>
       <div class="logo">
-        <img src="./imgs/SparkleSorrisos.svg" alt="SparkleSorrisos logo" />
+        <a href="#"><img src="./imgs/SparkleSorrisos.svg" alt="SparkleSorrisos logo" /></a>
       </div>
       <a href="#" class="toggle-btn">
         <span class="bar"></span>
@@ -20,10 +20,20 @@
       </a>
       <div class="navbar-links">
         <ul>
-          <li>
+          <li class="show-drop">
             <a href="#"
               >TRATAMENTOS<img src="./imgs/expandir.svg" alt="expand icon"
             /></a>
+          </li>
+          <li id="dropdown-list">
+            <ul>
+              <li class="dropdown"><a href="#">Clínica Geral</a></li>
+              <li class="dropdown"><a href="#">Endodontia</a></li>
+              <li class="dropdown"><a href="#">Estética</a></li>
+              <li class="dropdown"><a href="#">Implantes</a></li>
+              <li class="dropdown"><a href="#">Ortodontia</a></li>
+              <li class="dropdown"><a href="#">Próteses</a></li>
+            </ul>
           </li>
           <li><a href="#">CONTATO</a></li>
           <li><a href="#">FAQ</a></li>
@@ -200,7 +210,20 @@
           />
         </div>
         <div class="answer">
-          <p>Você pode tanto optar por fazer o <span>clareamento caseiro que é perfeito para quem tem uma sensibilidade muito alta</span>, porém ela depende completamente do paciente e pode ser um pouco cansativa, mas você pode também optar por fazer o <span>clareamento dental de consultório</span> com luz ultravioleta, que é <span>perfeito para quem não tem a pacienciência de usar a moldeira todos os dias em casa</span>, além de ter um resultado mais rápido.</p>
+          <p>
+            Você pode tanto optar por fazer o
+            <span
+              >clareamento caseiro que é perfeito para quem tem uma
+              sensibilidade muito alta</span
+            >, porém ela depende completamente do paciente e pode ser um pouco
+            cansativa, mas você pode também optar por fazer o
+            <span>clareamento dental de consultório</span> com luz ultravioleta,
+            que é
+            <span
+              >perfeito para quem não tem a pacienciência de usar a moldeira
+              todos os dias em casa</span
+            >, além de ter um resultado mais rápido.
+          </p>
         </div>
       </div>
       <div class="faq-question">
@@ -213,7 +236,13 @@
           />
         </div>
         <div class="answer">
-          <p>Como ja dissertamos sobre, a <span>gentileza faz parte da cultura da nossa empresa</span>, e por isso, nós nos importantamos muito com o bem estar físico e psicológico do paciente, então nos atentamos para sempre <span>acolher o paciente e todos os seus medos.</span></p>
+          <p>
+            Como ja dissertamos sobre, a
+            <span>gentileza faz parte da cultura da nossa empresa</span>, e por
+            isso, nós nos importantamos muito com o bem estar físico e
+            psicológico do paciente, então nos atentamos para sempre
+            <span>acolher o paciente e todos os seus medos.</span>
+          </p>
         </div>
       </div>
       <div class="faq-question">
@@ -226,7 +255,13 @@
           />
         </div>
         <div class="answer">
-          <p>Pois assim podemos trabalhar com a prevenção de doenças de uma maneira muito mais <span>eficiente</span>, além disso, mesmo se você já tiver algum problema, será muito mais <span>facil</span> trata-lo se conseguirmos identifica-lo no começo, e para que isso aconteça, e necessário fazer <span>consultas regularmente.</span></p>
+          <p>
+            Pois assim podemos trabalhar com a prevenção de doenças de uma
+            maneira muito mais <span>eficiente</span>, além disso, mesmo se você
+            já tiver algum problema, será muito mais <span>facil</span> trata-lo
+            se conseguirmos identifica-lo no começo, e para que isso aconteça, e
+            necessário fazer <span>consultas regularmente.</span>
+          </p>
         </div>
       </div>
       <div class="faq-question">
@@ -239,7 +274,12 @@
           />
         </div>
         <div class="answer">
-          <p>Em nossa clinica temos especialistas que trabalham com <span>pediatria</span> que sabem muito bem como lidar com crianças, então podemos garantir que com a nossa clinica, seu <span>filho começara amar ir para o dentista.</span></p>
+          <p>
+            Em nossa clinica temos especialistas que trabalham com
+            <span>pediatria</span> que sabem muito bem como lidar com crianças,
+            então podemos garantir que com a nossa clinica, seu
+            <span>filho começara amar ir para o dentista.</span>
+          </p>
         </div>
       </div>
       <div class="faq-question">
@@ -252,8 +292,11 @@
           />
         </div>
         <div class="answer">
-          <p><span>Definitivamente não!</span> Principalmente quando se é utilizado um bom anestésico, e se isso for combinada com a excelente técnica de
-            nossos profissionais, não existira dor nenhuma.</p>
+          <p>
+            <span>Definitivamente não!</span> Principalmente quando se é
+            utilizado um bom anestésico, e se isso for combinada com a excelente
+            técnica de nossos profissionais, não existira dor nenhuma.
+          </p>
         </div>
       </div>
     </section>
@@ -274,6 +317,7 @@
           <a href="#"><img src="./imgs/linkedin.svg" alt="linkedin icone" /></a>
         </div>
       </div>
+      <div class="border-line"></div>
       <div class="localization">
         <img src="./imgs/mapa.jpg" alt="mapa" />
         <p>R. Aly Pertou, 818 - Curitiba - PR, 84045-1952</p>
