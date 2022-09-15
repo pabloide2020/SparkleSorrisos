@@ -259,6 +259,29 @@ nav .logo img {
   }
 }
 
+@media (min-width: 220em) {
+  nav {
+    min-height: 10rem;
+  }
+
+  nav .logo img {
+    height: 6rem;
+    margin-left: 5rem;
+  }
+
+  .navbar-links a {
+    font-size: 2rem;
+  }
+
+  .navbar-links {
+    margin-right: 8rem;
+  }
+
+  #dropdown-list {
+    min-width: 18rem;
+  }
+}
+
 /* ==== HEADER ==== */
 header {
   min-height: 30rem;
@@ -268,7 +291,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-image: url("/home/pabloide2020/Documentos/SparkleSorrisos/imgs/smile-home.jpg"); */
 }
 
 header h1 {
@@ -319,7 +341,7 @@ header h1 {
 
 .action-btn img {
   transform: translateY(25%);
-  height: 1.1rem;
+  height: 1em;
   margin-left: 0.5rem;
 }
 
@@ -373,6 +395,39 @@ header div {
   header div {
     margin-left: 4rem;
     align-items: flex-start;
+  }
+}
+
+@media (min-width: 220em) {
+  header h1 {
+    font-size: 12rem;
+    padding-bottom: 2rem;
+    margin-bottom: 10rem;
+  }
+
+  header div {
+    margin-left: 8rem;
+  }
+
+  .blue-line::before {
+    height: 1.2rem;
+    border-radius: 10px;
+  }
+
+  .secondary-title.blue-line::before {
+    height: .9rem !important;
+  }
+
+  .action-btn {
+    font-size: 2rem;
+    border-radius: 10px;
+  }
+
+  .man-smile {
+    height: 75rem;
+    width: 70rem;
+    transform: translate(-8rem, 20rem);
+    border-radius: 10px;
   }
 }
 
@@ -475,6 +530,41 @@ p span {
   }
 }
 
+@media (min-width: 220em) {
+  .differentials {
+    margin-top: 20rem;
+  }
+
+  .bg-cards {
+    width: 100%;
+  }
+
+  .differentials .secondary-title {
+    margin-left: 8rem;
+  }
+
+  .secondary-title {
+    font-size: 6rem;
+  }
+
+  .differentials .card {
+    max-width: 50rem;
+    min-height: 61rem;
+    padding: 2.25em;
+  }
+
+  .differentials .card img {
+    height: 5rem;
+  }
+
+  .differentials .card h3 {
+    font-size: 3rem;
+  }
+
+  .differentials .card p {
+    font-size: 2.25rem;
+  }
+}
 /* ======== Section TESTIMONIALS ========== */
 
 .testimonials {
@@ -538,7 +628,7 @@ p span {
   }
 
   .text-testimonials p {
-    font-size: 1.60rem;
+    font-size: 1.6rem;
     margin-top: 2rem;
   }
 
@@ -549,6 +639,26 @@ p span {
   .text-testimonials .secondary-title {
     align-self: flex-start;
     margin-bottom: 0rem;
+  }
+}
+
+@media (min-width: 220em) {
+  .dps {
+    height: 55rem;
+  }
+
+  .text-testimonials p {
+    max-width: 60ch;
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+  }
+
+  .text-testimonials h3 {
+    font-size: 3rem;
+  }
+
+  .testimonials .action-btn {
+    width: 15%;
   }
 }
 /*===== specialties =====*/
@@ -647,6 +757,32 @@ p span {
   }
 }
 
+@media (min-width: 220em) {
+  .specialties-cards {
+    max-width: 160rem;
+  }
+
+  .specialties-cards .card {
+    width: unset;
+  }
+
+  .specialties-cards .card h3 {
+    font-size: 3rem;
+  }
+
+  .specialties-cards .card a {
+    font-size: 4rem;
+  }
+
+  .specialties .secondary-title {
+    margin-left: 8rem;
+  }
+
+  .specialties {
+    margin-top: 12rem;
+  }
+}
+
 /* ======== Section ABOUT ======== */
 
 .about {
@@ -721,7 +857,6 @@ p span {
     border-radius: 5px;
   }
 
-  
   .about {
     margin-top: 10rem;
     flex-wrap: nowrap;
@@ -737,6 +872,40 @@ p span {
     width: 40%;
   }
 }
+  @media (min-width: 220em) {
+      .about {
+      margin-top: 20rem;
+      min-height: 50rem;    
+    }
+
+    .building {
+      height: 65rem;
+      left: 50rem;
+      transform: translateY(-88%);  
+    }
+
+    .about-txt {
+      margin-right: 60rem;
+    }
+
+    .about-txt p {
+      font-size: 2rem;
+      max-width: 60ch;
+    }
+
+    .icon-txt img {
+      height: 3rem;
+    }
+
+    .about-txt h3 {
+      font-size: 3rem;
+    }
+
+    .about .action-btn {
+      width: 50%;
+    }
+}
+
 
 /* ==== Section FAQ*/
 
@@ -829,6 +998,25 @@ p span {
   }
 }
 
+@media (min-width: 220em) {
+  .faq {
+    margin-top: 15rem;
+  }
+  
+  .faq-question {
+    margin-bottom: 1.5rem;
+  }
+
+  .answer p {
+    font-size: 2rem;
+  }
+
+  .question h3 {
+    font-size: 3rem;
+  }
+
+}
+
 /* ========= FOOTER ========== */
 footer {
   display: flex;
@@ -892,9 +1080,9 @@ footer p {
     flex-wrap: nowrap;
     justify-content: space-between;
     position: relative;
-    padding: .25em 4rem;
+    padding: 0.25em 4rem;
   }
-  
+
   footer .border-line {
     width: unset;
     height: 30rem;
@@ -931,5 +1119,11 @@ footer p {
 
   .midias a {
     margin-right: 3rem;
+  }
+}
+
+@media (min-width: 220em) {
+  footer p {
+    font-size: 2rem;
   }
 }
