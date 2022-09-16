@@ -280,6 +280,14 @@ nav .logo img {
   #dropdown-list {
     min-width: 18rem;
   }
+
+  .drop-rotate #expand{
+  transform: rotate(180deg) translate(-50%, -200%) !important;
+  }
+
+  #expand{
+    transform: translate(50%, 200%);
+  }
 }
 
 /* ==== HEADER ==== */
@@ -415,7 +423,7 @@ header div {
   }
 
   .secondary-title.blue-line::before {
-    height: .9rem !important;
+    height: 0.9rem !important;
   }
 
   .action-btn {
@@ -872,40 +880,39 @@ p span {
     width: 40%;
   }
 }
-  @media (min-width: 220em) {
-      .about {
-      margin-top: 20rem;
-      min-height: 50rem;    
-    }
+@media (min-width: 220em) {
+  .about {
+    margin-top: 20rem;
+    min-height: 50rem;
+  }
 
-    .building {
-      height: 65rem;
-      left: 50rem;
-      transform: translateY(-88%);  
-    }
+  .building {
+    height: 65rem;
+    left: 50rem;
+    transform: translateY(-88%);
+  }
 
-    .about-txt {
-      margin-right: 60rem;
-    }
+  .about-txt {
+    margin-right: 60rem;
+  }
 
-    .about-txt p {
-      font-size: 2rem;
-      max-width: 60ch;
-    }
+  .about-txt p {
+    font-size: 2rem;
+    max-width: 60ch;
+  }
 
-    .icon-txt img {
-      height: 3rem;
-    }
+  .icon-txt img {
+    height: 3rem;
+  }
 
-    .about-txt h3 {
-      font-size: 3rem;
-    }
+  .about-txt h3 {
+    font-size: 3rem;
+  }
 
-    .about .action-btn {
-      width: 50%;
-    }
+  .about .action-btn {
+    width: 50%;
+  }
 }
-
 
 /* ==== Section FAQ*/
 
@@ -1002,7 +1009,7 @@ p span {
   .faq {
     margin-top: 15rem;
   }
-  
+
   .faq-question {
     margin-bottom: 1.5rem;
   }
@@ -1014,7 +1021,6 @@ p span {
   .question h3 {
     font-size: 3rem;
   }
-
 }
 
 /* ========= FOOTER ========== */

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+:root {
+    /* FONTS */
+  
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Roboto", sans-serif;
+    --major-contrast-weight: 600;
+    --medium-contrast-weight: 500;
+    --minor-contrast-weight: 400;
+  
+    /* COLORS */
+  
+    /* main scales */
+    --primary-clr: #72f2eb;
+    --secondary-clr: #06626f;
+    --terciary-clr: #c9fff4;
+  
+    /* gray scale */
+    --primary-black-clr: #0e0e0e;
+    --secondary-black-clr: #1a1a1a;
+    --terciary-black-clr: #2e2e2e;
+    --primary-white-clr: #f7f7f7;
+    --secondary-white-clr: #dedede;
+    --terciary-white-clr: #9c9c9c;
+  
+    /*gradients*/
+    --primary-gradient: linear-gradient(to bottom, var(--primary-clr), #38d0c8);
+    --secondary-gradient: linear-gradient(to bottom, var(--primary-clr), #28bbb3);
+    --terciary-gradient: linear-gradient(
+      to bottom,
+      var(--primary-white-clr),
+      var(--secondary-white-clr)
+    );
+  }
+  
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-top: 5%;
+}
+
+.description-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.description h2 {
+    margin: 0 1rem;
+    flex-shrink: 0;
+}
+
+.after-line, .before-line {
+    height: 4px;
+    background-image: var(--secondary-gradient);
+}
+
+.after-line {
+ width: 100%;
+}
+
+.before-line {
+    width: 3rem;
+}
+
+.text-img {
+    display: flex;
+    margin: 0 4rem;
+}
+
+.text-img img {
+    border-radius: 5px;
+}
+
+.desc-txt {
+    max-width: 55ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0em 3em;
+}
+
+.desc-txt a {
+    max-width: 60%;
+}
+
+.desc-txt p {
+    font-family: var(--secondary-font);
+    font-weight: var(--minor-contrast-weight);
+    line-height: 1.5;
+}
+
+@media (max-width: 55em) {
+    .before-line {
+        width: 1rem;
+    }
+    
+    .text-img {
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+
+    .desc-txt {
+        padding: 0;
+        margin-top: 1.5rem;
+    }
+
+    .desc-txt a {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 220em) {
+
+    .after-line, .before-line {
+        height: 10px;
+    }
+
+    .before-line {
+        width: 8rem;
+    }
+
+    .text-img {
+        margin: 0 8rem;
+        height: 75rem;
+    }
+
+    .desc-txt {
+        font-size: 2rem;
+        max-width: 70ch;
+    }
+}
