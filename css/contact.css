@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  /* FONTS */
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --major-contrast-weight: 600;
+  --medium-contrast-weight: 500;
+  --minor-contrast-weight: 400;
+
+  /* COLORS */
+
+  /* main scales */
+  --primary-clr: #72f2eb;
+  --secondary-clr: #06626f;
+  --terciary-clr: #c9fff4;
+
+  /* gray scale */
+  --primary-black-clr: #0e0e0e;
+  --secondary-black-clr: #1a1a1a;
+  --terciary-black-clr: #2e2e2e;
+  --primary-white-clr: #f7f7f7;
+  --secondary-white-clr: #dedede;
+  --terciary-white-clr: #9c9c9c;
+
+  /*gradients*/
+  --primary-gradient: linear-gradient(to bottom, var(--primary-clr), #38d0c8);
+  --secondary-gradient: linear-gradient(to bottom, var(--primary-clr), #28bbb3);
+  --terciary-gradient: linear-gradient(
+    to bottom,
+    var(--primary-white-clr),
+    var(--secondary-white-clr)
+  );
+}
+
+section {
+    background-color: var(--primary-clr);
+}
+
+.letters, .img {
+    display: none;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: var(--primary-font);
+    font-weight: var(--medium-contrast-weight);
+    margin-top: 1rem;
+}
+
+section .secondary-title {
+    font-weight: var(--medium-contrast-weight);
+    line-height: 1.1;
+    padding-bottom: 1rem;
+    padding-top: .5rem;
+    font-size: 2rem;
+}
+
+.txt img {
+    filter: invert(1);
+    height: 1rem;
+    align-self: flex-start;
+    margin-bottom: 2rem;
+}
+
+.txt {
+    border-radius: 5px;
+    position: relative;
+}
+
+.txt::before {
+    content: '';
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-clr);
+}
+
+.send {
+    width: 10ch;
+    margin-top: 1rem;
+    background-image: var(--primary-gradient);
+    color: var(--primary-black-clr);
+    font-family: var(--primary-font);
+    font-weight: var(--medium-contrast-weight);
+    border: none;
+    border-radius: 5px;
+    padding: .25em;
+}
+
+.send:active {
+    filter: brightness(90%);
+}
+
+input, textarea {
+    background-color: var(--secondary-white-clr);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--secondary-font);
+    padding: .25em;
+}
+
+input:focus, textarea:focus {
+    background-color: white;
+    border: 2px solid black;
+    outline: none;
+}
+
+@media (min-width: 75em) {
+    .img {
+        display: block;
+        height: 37rem;
+        min-width: 40rem;
+        border-radius: 0px 5px 5px 0px;
+        position: relative;
+    }
+
+    .letters {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        margin: 5rem auto;
+        justify-content: center;
+        position: relative;
+    }
+
+    .txt {
+        margin: unset;
+        max-width: 25%;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .img::before {
+        content: '';
+        height: 8px;
+        width: 100%;
+        z-index: 200;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--secondary-clr);
+    }
+
+    .send:hover {
+        filter: brightness(110%);
+    }
+    
+}
+
+@media (min-width: 220em) {
+    section .secondary-title {
+        font-size: 4rem;
+    }
+
+    .txt img {
+        height: 2rem;
+        margin-bottom: 2.5rem;
+        margin-top: 1.5rem;
+    }
+
+    label {
+        font-size: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    input {
+        height: 3rem;
+        font-size: 2rem;
+    }
+
+    textarea {
+        font-size: 2rem;
+    }
+
+    .send {
+        margin-top: 2rem;
+        height: unset;
+        border-radius: 10px;
+    }
+
+    .img{
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .txt {
+        border-radius: 10px 0px 0px 10px;
+        padding: 2rem;
+    }
+
+    .txt::before, .img::before {
+        height: 1rem;
+    }
+
+    .img {
+        height: 80rem;
+        width: 85rem;
+    }
+}

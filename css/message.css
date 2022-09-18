@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  /* FONTS */
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --major-contrast-weight: 600;
+  --medium-contrast-weight: 500;
+  --minor-contrast-weight: 400;
+
+  /* COLORS */
+
+  /* main scales */
+  --primary-clr: #72f2eb;
+  --secondary-clr: #06626f;
+  --terciary-clr: #c9fff4;
+
+  /* gray scale */
+  --primary-black-clr: #0e0e0e;
+  --secondary-black-clr: #1a1a1a;
+  --terciary-black-clr: #2e2e2e;
+  --primary-white-clr: #f7f7f7;
+  --secondary-white-clr: #dedede;
+  --terciary-white-clr: #9c9c9c;
+
+  /*gradients*/
+  --primary-gradient: linear-gradient(to bottom, var(--primary-clr), #38d0c8);
+  --secondary-gradient: linear-gradient(to bottom, var(--primary-clr), #28bbb3);
+  --terciary-gradient: linear-gradient(
+    to bottom,
+    var(--primary-white-clr),
+    var(--secondary-white-clr)
+  );
+}
+
+section {
+    background-color: var(--secondary-clr);
+    min-height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section h2 {
+    font-family: var(--primary-font);
+    font-weight: var(--medium-contrast-weight);
+    font-size: clamp(2rem, 4vh + .1rem, 8rem);
+    color: white;
+}
